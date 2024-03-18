@@ -7,7 +7,7 @@ describe("Smart table", ()=>{
   const email = "lena111@@gmail.com";
   const age = '27';
   const id = '678';
-  const raw = 3;
+  const row = 3;
 
   const test = new SmartTablePage();
 
@@ -29,7 +29,7 @@ describe("Smart table", ()=>{
   });
 
   it('should edit test', () => {
-    test.editRecord(raw);
+    test.editRecord(row);
     test.fillForm(id, firstName, lastName, username, email, age);
     test.saveRecord();
     test.deleteRecord();
