@@ -38,8 +38,8 @@ export default class SmartTablePage{
     this.container.find('.nb-close').should("be.visible").click();
   }
 
-  editRecord() {
-    this.container.find('.nb-edit').first().click();
+  editRecord(raw) {
+    this.container.find('.nb-edit').eq(raw).click();
   }
 
   deleteRecord() {
