@@ -1,0 +1,16 @@
+{
+  "testData1":
+  {
+  "title": "new user",
+  "body": "test ADD",
+  "userId": 1016
+  },
+  "testData2":
+  {
+    "body": -56478587,
+    "title":true,
+    "userId": null,
+    "bobby": "test",
+    "id": null
+  }
+}

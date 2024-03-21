@@ -43,3 +43,12 @@ Cypress.Commands.add('login', ({email, password, rememberMe = false}) => {
 
 });
 
+Cypress.Commands.overwrite('visit', (originalVisit, url) => {
+  originalVisit({
+    url,
+    auth: {
+      username: 'guest',
+      password: 'welcome2qauto',
+    },
+  });
+});
